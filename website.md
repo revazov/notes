@@ -2,9 +2,9 @@
 
 ## Сайты ##
 
-1. Онлайн редакторы
+1. **__Онлайн редакторы__**
  1. [ZenPen](http://www.zenpen.io/)
-2. Иконки
+2. **__Иконки__**
  1. [Material от Google](https://github.com/google/material-design-icons/releases/tag/1.0.0)
  
 ## Шрифты ##
