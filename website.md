@@ -3,7 +3,8 @@
 ## Сайты ##
 
 1. **__Онлайн редакторы__**
- 1. [ZenPen](http://www.zenpen.io/)
+ 1. [ZenPen](http://www.zenpen.io/) - текстовый редактор
+ 2. [draw.io](https://www.draw.io/) - Редактор блок-схем 
 2. **__Иконки__**
  1. [Material от Google](https://github.com/google/material-design-icons/releases/tag/1.0.0)
  
