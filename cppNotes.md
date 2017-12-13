@@ -53,7 +53,7 @@ class A
   mutable value2 = 20;
   const int * foo(); // const перед названием функции
   int foo2() const; // const после названия функции - константная функция
-}
+};
 
 const int * A::foo() // Модификатор const относится к возвращаемому типу данных
 {
