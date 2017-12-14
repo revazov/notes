@@ -94,8 +94,10 @@ int A::foo2() const // Модификатор const относится к воз
 
 #### Приведение типов
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+**Приведение интегральных типов:**
+
+| From  | To | Условие |
+| ------------- | ------------- | --- |
+| signed char, signed short | int  | |
+| unsigned char, unsigned short | int, unsigned | Если int может вместить, то int, иначе unsigned |
  
