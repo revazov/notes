@@ -92,6 +92,15 @@ int A::foo2() const // Модификатор const относится к воз
   3. Встроенные преобразования типов (*standart type conversion*);
   4. Конструктор или пользовательское преобразование типов.
 
+#### Точное совпадение
+
+ 1. Точное совпадение типов;
+ 2. Совпадение с точностью до `typedef`;
+ 3. Тривиальные преобразования:
+   - `T[]` <-> `T*`
+   - `T` <-> `T&`
+   - `T` -> `const T`
+
 #### Приведение типов
 
 **Приведение числовых типов:**
@@ -101,8 +110,8 @@ int A::foo2() const // Модификатор const относится к воз
 | `signed char`, `signed short` | `int`  | |
 | `unsigned char`, `unsigned short` | `int`, `unsigned` | Если `int` может вместить, то `int`, иначе `unsigned` |
 | `wchar_t`, `char16_t`, `char32_t` | `int`, `unsigned`, `long`, `unsigned long`, `long long`, `unsigned long long` | Приводятся к первому типу из списка, который способен вместить |
-| unscoped unumiration type not fixed | `int`, `unsigned`, `long`, `unsigned long`, `long long`, `unsigned long long` | то же самое |
-| unscoped unumiration type fixed | type promotion rules | |
+| unscoped unumiration type not fixed | `int`, `unsigned`, `long`, `unsigned long`, `long long`, `unsigned long long` | Приводятся к первому типу из списка, который способен вместить |
+| unscoped unumiration type fixed |  | Действуют правила для типа на котором основан `enum` |
 | `bool` | `int` | |
 | `bit field` | `int`, `unsigned` | Если `int` может вместить, то `int`, иначе `unsigned` (> `unsigned` тогда нет приведения) |
 | `float` | `double` | |
