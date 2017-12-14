@@ -94,10 +94,15 @@ int A::foo2() const // Модификатор const относится к воз
 
 #### Приведение типов
 
-**Приведение интегральных типов:**
+**Приведение числовых типов:**
 
 | From  | To | Условие |
 | ------------- | ------------- | --- |
-| signed char, signed short | int  | |
-| unsigned char, unsigned short | int, unsigned | Если int может вместить, то int, иначе unsigned |
- 
+| `signed char`, `signed short` | `int`  | |
+| `unsigned char`, `unsigned short` | `int`, `unsigned` | Если `int` может вместить, то `int`, иначе `unsigned` |
+| `wchar_t`, `char16_t`, `char32_t` | `int`, `unsigned`, `long`, `unsigned long`, `long long`, `unsigned long long` | Приводятся к первому типу из списка, который способен вместить |
+| unscoped unumiration type not fixed | `int`, `unsigned`, `long`, `unsigned long`, `long long`, `unsigned long long` | то же самое |
+| unscoped unumiration type fixed | type promotion rules | |
+| `bool` | `int` | |
+| `bit field` | `int`, `unsigned` | Если `int` может вместить, то `int`, иначе `unsigned` (> `unsigned` тогда нет приведения) |
+| `float` | `double` | |
