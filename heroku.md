@@ -1,0 +1,13 @@
+### Переменные среды
+
+Установка переменной среды
+> `heroku config:set TOKEN=1234567890qwerty`
+
+Получение переменной среды
+> `heroku config:get TOKEN`
+
+Получение всех переменных среды
+> `heroku config`
+
+Сброс переменной среды
+> `heroku config:unset TOKEN`
